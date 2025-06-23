@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial;background:linear-gradient(135deg,#1a1a2e,#0f3460);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px}
+.title{font-size:clamp(3rem,10vw,6rem);font-weight:bold;background:linear-gradient(45deg,#ffd700,#ff6b35,#8a2be2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:glow 2s infinite;margin-bottom:20px}
+@keyframes glow{0%,100%{text-shadow:0 0 20px #ffd700}50%{text-shadow:0 0 40px #ffd700}}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:15px;max-width:500px;margin:30px 0}
+.card{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.3);border-radius:15px;padding:20px;color:white;transition:transform 0.3s;cursor:pointer}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(138,43,226,0.5)}
+.icon{font-size:2rem;margin-bottom:10px}
+.btn{display:inline-block;background:linear-gradient(45deg,#ff6b35,#8a2be2);color:white;padding:15px 25px;font-size:1.2rem;border:none;border-radius:25px;cursor:pointer;margin-top:20px;transition:transform 0.3s;text-decoration:none}
+.btn:hover{transform:translateY(-3px)}
+.info{color:#ccc;margin-top:15px;font-size:0.9rem}
+@media(max-width:600px){.cards{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<h1 class="title">PIXELMON LEGENDS</h1>
+<div class="cards">
+  <div class="card"><div class="icon">⚔️</div>Batalhas</div>
+  <div class="card"><div class="icon">🏆</div>Ginásios</div>
+  <div class="card"><div class="icon">🌟</div>Lendários</div>
+  <div class="card"><div class="icon">🎮</div>Aventura</div>
+</div>
+<p class="info">Capture e treine seus Pokémon favoritos!</p>
+
+<!-- BOTÃO COM LINK PARA O DISCORD -->
+<a href="https://discord.gg/P6bFZpk2bG" target="_blank" class="btn">JOGAR AGORA</a>
+
+</body>
+</html>
